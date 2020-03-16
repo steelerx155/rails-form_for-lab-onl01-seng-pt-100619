@@ -343,3 +343,13 @@ Processing by StudentsController#new as HTML
 Completed 200 OK in 20ms (Views: 13.3ms | ActiveRecord: 0.9ms)
 
 
+Started POST "/students" for 174.97.92.123 at 2020-03-16 17:59:37 +0000
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A69akN5KHeFaHfLpNquYabuw3UtDzx9UetAvJB8rqIyDFE59ZNbICfiK+EAV8FHRoqVQPlZI8hVFpgNCcw2cfg==", "student"=>{"first_name"=>"Randy", "last_name"=>"Steele"}, "commit"=>"Create Student"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Randy"], ["last_name", "Steele"], ["created_at", "2020-03-16 17:59:37.061563"], ["updated_at", "2020-03-16 17:59:37.061563"]]
+  [1m[35m (43.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://165.227.81.218:39219/students/4
+Completed 302 Found in 47ms (ActiveRecord: 43.6ms)
+
+
