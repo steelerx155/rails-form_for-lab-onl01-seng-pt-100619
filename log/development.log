@@ -353,3 +353,12 @@ Redirected to http://165.227.81.218:39219/students/4
 Completed 302 Found in 47ms (ActiveRecord: 43.6ms)
 
 
+Started GET "/students/4" for 174.97.92.123 at 2020-03-16 17:59:37 +0000
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 16ms (Views: 11.0ms | ActiveRecord: 0.2ms)
+
+
